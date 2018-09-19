@@ -1,0 +1,56 @@
+﻿@lightgray: #c8ccd4;
+
+.msg, .info-msg, .success-msg, .warning-msg, .error-msg{
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin: 5px 0;
+    position: relative;
+    .close{
+        outline: none;
+        position: absolute;
+        height: 100%;
+        width: 30px;
+        right: 0;
+        top: 0;
+        border: none;
+        background: none;
+        font-size: 1.1em;
+        &:active{
+            background: lighten(@lightgray, 10%);
+        }
+        &:hover{
+            background: @lightgray;
+        }
+        cursor: pointer;
+        font-weight: 600;
+        font-family: Consolas;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}
+
+.msg{
+    background: #f8f9fb;
+    color: #333;
+}
+
+.info-msg {
+    color: #059;
+    background-color: #d9f3ff;
+}
+
+.success-msg {
+    color: #270;
+    background-color: #b9e5b6;
+}
+
+.warning-msg {
+    color: #67640a;
+    background-color: #ffeea8;
+}
+
+.error-msg {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
