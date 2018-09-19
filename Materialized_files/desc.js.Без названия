@@ -1,0 +1,15 @@
+﻿var mdComponents = {
+    buttonText: '<button class="button yellow ripple-ink">YELLOW</button>',
+    buttonTextRC: '<button class="button red ripple-ink" data-rc="rgba(255,255,255,0.15)">RED</button>',
+    inputsText: '<div class="md-input-container blue"><label>Some label text</label> <input type="text"></div>',
+    checkText: '<div class="b-check black"><input type="checkbox" id="chk_7"> <label for="chk_7">Checkbox 7</label></div>',
+    radioText: '<div class="b-radio pink"><input id="r3" type="radio" name="g"><label for="r3">Option 3</label></div>'
+};
+
+new Vue({
+    el: '#mdapp',
+    data: mdComponents,
+    methods: {
+
+    }
+});
